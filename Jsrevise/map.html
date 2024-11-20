@@ -1,0 +1,77 @@
+<script>
+  var numbers = [1, 2, 3, 4, 5];
+  var squares1 = [];
+
+  for (let i = 0; i < numbers.length; i++) {
+    squares1.push(numbers[i] * numbers[i]);
+  }
+  console.log(squares1);
+
+  // --------------------------------------------------------------------
+
+  var squares2 = numbers.map((num) => {
+    return num * num;
+  });
+  console.log(squares2);
+
+  //---------------------------------------------------------------
+
+  //convert to upper case string
+
+  var cars = ["bmw", " audi", "mercedes", "jaguar"];
+
+  var car1 = [];
+
+  for (var i = 0; i < car1.length; i++) {
+    car1.push(cars[i].toUpperCase());
+  }
+  console.log(car1);
+
+  //----------------------------------------------------------
+
+  var string1 = ["a", "b", "c", "d", "e", "f"];
+
+  var upper1 = [];
+
+  var upper1 = string1.map((str) => str.toUpperCase());
+  console.log(upper1);
+
+  //Array of object
+
+  var user = [
+    {
+      name: "Aditya",
+      id: 101,
+      age: 24,
+      sub1: 85, 
+      sub2: 60, 
+      sub3: 65, 
+    },
+    {
+      name: "Sonali",
+      id: 102,
+      age: 23,
+      sub1: 80, 
+      sub2: 70, 
+      sub3: 75, 
+    },
+  ];
+
+  var name1 = [];
+  for (let i = 0; i < user.length; i++) {
+    name1.push(user[i].name);
+  }
+  console.log(name1);
+
+  var name2 = user.map((user) => user.name);
+
+  console.log(name2);
+
+  //-----------------------------------------------------------------
+
+  var per = user.map((user, i) => {
+    percentage = ((user.sub1 + user.sub2 + user.sub3) / 300) * 100;
+    return user.name +" => " + " Percentage: " + percentage;
+  });
+  console.log(per);
+</script>

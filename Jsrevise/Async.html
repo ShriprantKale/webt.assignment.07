@@ -1,0 +1,37 @@
+<script>
+    //synchronously
+    console.log("start");
+    const fetchData = ()=>{
+    console.log("long task.......");
+    }
+    fetchData();
+    console.log("end");
+    
+    console.log("------------------------------------");
+
+    //Asynchronous
+
+
+console.log("start");
+const fetchData1 = ()=>{
+  setTimeout(() => {
+        console.log("long task....... (async)");
+    }, 3000);
+};
+fetchData1();
+console.log("end");
+
+
+//stack contains start,end and settimeout  and when we execute the process callback fun (setTimeout) have 3 sec delay  so start and end will execute first and call stack becomes empty but our setTimeout will in callback queue and it will be executed in the call stack  after 3 sec delay.
+
+
+
+
+
+
+
+
+
+    
+    
+</script>
