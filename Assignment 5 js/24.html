@@ -1,0 +1,11 @@
+<!-- 24) create a paragraph with some dummy content , on button double click change the paragraph background color
+to grey ( hint : use style & getElementById() functionality) -->
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam maiores perspiciatis cupiditate ut labore animi aut accusantium atque, delectus error quibusdam eos quo quia, facere sint numquam inventore suscipit! Repellendus.</p>
+<button id="btn">Click me</button>
+<script>
+    document.getElementById("btn").addEventListener("dblclick", function(){
+        var paragraph = document.getElementById("paragraph");
+        paragraph.style.backgroundColor = "grey";
+        });
+</script>

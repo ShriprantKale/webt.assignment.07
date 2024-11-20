@@ -1,0 +1,11 @@
+<!-- 23) create a paragraph with some dummy content , on button click change the paragraph value ( hint : use
+innerHTML & querySelector() functionality) -->
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, sit vitae in maxime laudantium cum hic expedita, explicabo sapiente, quas eius. Nulla sint eveniet labore dolorum placeat perferendis sapiente vitae.</p>
+<button id="btn">Change Text</button>
+<script>
+    document.getElementById("btn").addEventListener("click", function(){
+        var paragraph = document.querySelector("p");
+        paragraph.innerHTML = "Hello World!";
+        });
+</script>

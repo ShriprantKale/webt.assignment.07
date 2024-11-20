@@ -1,0 +1,16 @@
+<!-- 33) create a textbox (with id txt) & get value from textbox , in case textbox is empty then please show textbox
+border with color red & border width 2px. -->
+
+<input type="text" id="txt" oninput="checkInput()">
+
+<script>
+    function checkInput() {
+        var x = document.getElementById("txt").value;
+        if (x == "") {
+            document.getElementById("txt").style.border = "2px solid red";
+        } else {
+            document.getElementById("txt").style.border = "none";
+        }
+
+        console.log(x);
+    }

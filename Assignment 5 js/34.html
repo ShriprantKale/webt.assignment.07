@@ -1,0 +1,16 @@
+<!-- 34) create a textbox (with id txt) & get value.
+if the value is string then show error in paragraph as only number is required. -->
+
+<input type="text" id="txt">
+
+<p id="error"></p>
+
+<script>
+    function checkinput(){
+        var input = document.getElementById('txt').value;
+        if(isNaN(input)){
+            document.getElementById('error').innerText = "Error: Only numbers are required.";
+        } else {
+            document.getElementById('error').innerText = "";
+        }
+    }

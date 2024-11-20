@@ -1,0 +1,22 @@
+<!-- 25) create a paragraph with some dummy content , on mouse over change the paragraph content ( hint: no hint in
+this case ) -->
+<p>
+    <span id="dummy-content" style="display: none;">This is some dummy content.</span>
+    <span id="dummy-content2" style="display: none;">This is some other dummy
+        content.</span>
+        </p>
+
+<script>
+    var dummyContent = document.getElementById("dummy-content");
+    var dummyContent2 = document.getElementById("dummy-content2");
+    var paragraph = document.getElementById("dummy-content");
+    paragraph.onmouseover = function() {
+        dummyContent.style.display = "block";
+        dummyContent2.style.display = "none";
+        }
+        paragraph.onmouseout = function() {
+            dummyContent.style.display = "none";
+            dummyContent2.style.display = "none";
+            }
+            
+</script>

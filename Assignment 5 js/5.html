@@ -1,0 +1,15 @@
+<!-- 5) on mousemove event get x coordinate & y coordinate , and show the result in paragraph. -->
+<p>
+    <span id="x"></span> , <span id="y"></span>
+    
+</p>
+<script>
+    document.addEventListener("mousemove", function(event) {
+        var x = event.clientX;
+        var y = event.clientY;
+        document.getElementById("x").innerHTML = x;
+        document.getElementById("y").innerHTML = y;
+        });
+ 
+</script>
+
