@@ -1,0 +1,18 @@
+<!-- 50) create a text box , get value from the same. do the validation for name & show result in paragraph ( below
+textbox) -->
+
+<input type="text">
+<p></p>
+<script>
+ const input =   document.querySelector('input');
+ const paragraph = document.querySelector('p');
+ input.addEventListener('input',function(){
+    const name = input.value;
+    if(name.length > 5){
+        paragraph.innerText = "Name is valid";
+    }else{
+        paragraph.innerText = "Name is not valid";
+    }
+ })
+
+</script>

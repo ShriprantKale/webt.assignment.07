@@ -1,0 +1,21 @@
+<!-- 49) create a text box , get value from the same. do the validation for emailid & show result in paragraph (
+below textbox) -->
+
+<input type="text">
+<p></p>
+
+<script>
+    const input = document.querySelector('input');
+    const paragraph = document.querySelector('p');
+    input.addEventListener('input',function(){
+        const value=this.value;
+        const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+        const isValid = emailRegex.test(value);
+        paragraph.textContent = isValid? 'Valid email' : 'Invalid email';
+
+    });
+
+    
+
+    
+</script>

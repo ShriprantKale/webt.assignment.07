@@ -1,0 +1,14 @@
+<!-- 36) create a textbox (with id txt). create a paragraph (having id para ).onclick event get only number from
+textbox & display square of the no which you have entered ( hint: use Math library ) -->
+
+
+<input type="text" id="txt">
+
+<p id="para"></p>
+<script>
+    document.getElementById('txt').addEventListener('click', function() {
+        let num = parseInt(this.value);
+        let square = Math.pow(num, 2);
+        document.getElementById('para').innerText = 'Square of the entered number is:'+ square;
+    });
+</script>

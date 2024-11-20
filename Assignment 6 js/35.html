@@ -1,0 +1,22 @@
+<!-- 35) create a textbox (with id txt). create a paragraph (having id para ). onclick event get value from textbox
+and display it within paragraph ( hint: you may use innerText or innerHTML , get the diff. between
+innerText,innerHTML) -->
+
+
+<input type="text" id="txt">
+
+<p id="para"></p>
+
+
+<script>
+    document.getElementById('txt').addEventListener('click', function() {
+        var value = this.value;
+        document.getElementById('para').innerText = value;
+    });
+
+
+
+</script>
+<!-- Use innerText when you only need the text content, ignoring HTML structure.
+Use innerHTML when you need access to or need to set the HTML structure itself. -->
+

@@ -1,0 +1,9 @@
+<!-- 46) create an array with any five value . on button click remove first value -->
+<button id="btn">click</button>
+<script>
+    let arr = [1, 2, 3, 4, 5];
+    document.getElementById('btn').addEventListener('click', () => {
+        arr.shift();
+        console.log(arr);
+    });
+</script>

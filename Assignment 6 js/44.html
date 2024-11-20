@@ -1,0 +1,14 @@
+<!-- 44) create an array with any three value . on button click add value 20 within an array (i.e at start position) -->
+
+<button id="btn">Click</button>
+
+
+<script>
+  const arr = [1, 20, 3];
+    document.getElementById('btn').addEventListener('click', function() {
+        
+        arr.unshift(20);
+        console.log(arr);
+    });
+   
+</script>
